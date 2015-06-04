@@ -14,6 +14,18 @@
 		D4F80CC91AEC1AF500F19A0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F80CC81AEC1AF500F19A0F /* Images.xcassets */; };
 		D4F80CCC1AEC1AF500F19A0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4F80CCA1AEC1AF500F19A0F /* LaunchScreen.xib */; };
 		D4F80CD81AEC1AF500F19A0F /* Remote_FartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F80CD71AEC1AF500F19A0F /* Remote_FartTests.m */; };
+		D4F80CE21AEC1B2800F19A0F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F80CE11AEC1B2800F19A0F /* AudioToolbox.framework */; };
+		D4F80CE41AEC1B2D00F19A0F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F80CE31AEC1B2D00F19A0F /* AVFoundation.framework */; };
+		D4F80CE61AEC1B9000F19A0F /* woopee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4F80CE51AEC1B9000F19A0F /* woopee.mp3 */; };
+		D4F80CE81AEC1B9B00F19A0F /* i5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F80CE71AEC1B9B00F19A0F /* i5.storyboard */; };
+		D4F80CF31AEC1BAA00F19A0F /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F80CF21AEC1BAA00F19A0F /* InterfaceController.m */; };
+		D4F80CF51AEC1BAA00F19A0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F80CF41AEC1BAA00F19A0F /* Images.xcassets */; };
+		D4F80CF91AEC1BAA00F19A0F /* Remote Fart WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = D4F80CF81AEC1BAA00F19A0F /* Remote Fart WatchKit App.app */; };
+		D4F80D011AEC1BAA00F19A0F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F80CFF1AEC1BAA00F19A0F /* Interface.storyboard */; };
+		D4F80D061AEC1BAA00F19A0F /* Remote Fart WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D4F80CED1AEC1BAA00F19A0F /* Remote Fart WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D4F80D0F1AEC1CEB00F19A0F /* 6plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F80D0E1AEC1CEB00F19A0F /* 6plus.storyboard */; };
+		D4F80D111AEC215400F19A0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F80D101AEC215400F19A0F /* Images.xcassets */; };
+		D4F80D131AEC23E800F19A0F /* i4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F80D121AEC23E800F19A0F /* i4.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +36,35 @@
 			remoteGlobalIDString = D4F80CB71AEC1AF500F19A0F;
 			remoteInfo = "Remote Fart";
 		};
+		D4F80CFA1AEC1BAA00F19A0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4F80CB01AEC1AF500F19A0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4F80CF71AEC1BAA00F19A0F;
+			remoteInfo = "Remote Fart WatchKit App";
+		};
+		D4F80D041AEC1BAA00F19A0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4F80CB01AEC1AF500F19A0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4F80CEC1AEC1BAA00F19A0F;
+			remoteInfo = "Remote Fart WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4F80D0D1AEC1BAA00F19A0F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D4F80D061AEC1BAA00F19A0F /* Remote Fart WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D4F80CB81AEC1AF500F19A0F /* Remote Fart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote Fart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +80,21 @@
 		D4F80CD11AEC1AF500F19A0F /* Remote FartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Remote FartTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F80CD61AEC1AF500F19A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F80CD71AEC1AF500F19A0F /* Remote_FartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Remote_FartTests.m; sourceTree = "<group>"; };
+		D4F80CE11AEC1B2800F19A0F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D4F80CE31AEC1B2D00F19A0F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D4F80CE51AEC1B9000F19A0F /* woopee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = woopee.mp3; sourceTree = "<group>"; };
+		D4F80CE71AEC1B9B00F19A0F /* i5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = i5.storyboard; sourceTree = "<group>"; };
+		D4F80CED1AEC1BAA00F19A0F /* Remote Fart WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Remote Fart WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F80CF01AEC1BAA00F19A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4F80CF11AEC1BAA00F19A0F /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		D4F80CF21AEC1BAA00F19A0F /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		D4F80CF41AEC1BAA00F19A0F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4F80CF81AEC1BAA00F19A0F /* Remote Fart WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote Fart WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F80CFE1AEC1BAA00F19A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4F80D001AEC1BAA00F19A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D4F80D0E1AEC1CEB00F19A0F /* 6plus.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 6plus.storyboard; sourceTree = "<group>"; };
+		D4F80D101AEC215400F19A0F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4F80D121AEC23E800F19A0F /* i4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = i4.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +102,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4F80CE41AEC1B2D00F19A0F /* AVFoundation.framework in Frameworks */,
+				D4F80CE21AEC1B2800F19A0F /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D4F80CCE1AEC1AF500F19A0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F80CEA1AEC1BAA00F19A0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,8 +127,12 @@
 		D4F80CAF1AEC1AF500F19A0F = {
 			isa = PBXGroup;
 			children = (
+				D4F80CE31AEC1B2D00F19A0F /* AVFoundation.framework */,
+				D4F80CE11AEC1B2800F19A0F /* AudioToolbox.framework */,
 				D4F80CBA1AEC1AF500F19A0F /* Remote Fart */,
 				D4F80CD41AEC1AF500F19A0F /* Remote FartTests */,
+				D4F80CEE1AEC1BAA00F19A0F /* Remote Fart WatchKit Extension */,
+				D4F80CFC1AEC1BAA00F19A0F /* Remote Fart WatchKit App */,
 				D4F80CB91AEC1AF500F19A0F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +142,8 @@
 			children = (
 				D4F80CB81AEC1AF500F19A0F /* Remote Fart.app */,
 				D4F80CD11AEC1AF500F19A0F /* Remote FartTests.xctest */,
+				D4F80CED1AEC1BAA00F19A0F /* Remote Fart WatchKit Extension.appex */,
+				D4F80CF81AEC1BAA00F19A0F /* Remote Fart WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,11 +151,15 @@
 		D4F80CBA1AEC1AF500F19A0F /* Remote Fart */ = {
 			isa = PBXGroup;
 			children = (
+				D4F80CE51AEC1B9000F19A0F /* woopee.mp3 */,
 				D4F80CBF1AEC1AF500F19A0F /* AppDelegate.h */,
 				D4F80CC01AEC1AF500F19A0F /* AppDelegate.m */,
 				D4F80CC21AEC1AF500F19A0F /* ViewController.h */,
 				D4F80CC31AEC1AF500F19A0F /* ViewController.m */,
+				D4F80D121AEC23E800F19A0F /* i4.storyboard */,
+				D4F80CE71AEC1B9B00F19A0F /* i5.storyboard */,
 				D4F80CC51AEC1AF500F19A0F /* Main.storyboard */,
+				D4F80D0E1AEC1CEB00F19A0F /* 6plus.storyboard */,
 				D4F80CC81AEC1AF500F19A0F /* Images.xcassets */,
 				D4F80CCA1AEC1AF500F19A0F /* LaunchScreen.xib */,
 				D4F80CBB1AEC1AF500F19A0F /* Supporting Files */,
@@ -119,6 +193,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D4F80CEE1AEC1BAA00F19A0F /* Remote Fart WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D4F80CF11AEC1BAA00F19A0F /* InterfaceController.h */,
+				D4F80CF21AEC1BAA00F19A0F /* InterfaceController.m */,
+				D4F80CF41AEC1BAA00F19A0F /* Images.xcassets */,
+				D4F80CEF1AEC1BAA00F19A0F /* Supporting Files */,
+			);
+			path = "Remote Fart WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D4F80CEF1AEC1BAA00F19A0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4F80CF01AEC1BAA00F19A0F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4F80CFC1AEC1BAA00F19A0F /* Remote Fart WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D4F80CFF1AEC1BAA00F19A0F /* Interface.storyboard */,
+				D4F80D101AEC215400F19A0F /* Images.xcassets */,
+				D4F80CFD1AEC1BAA00F19A0F /* Supporting Files */,
+			);
+			path = "Remote Fart WatchKit App";
+			sourceTree = "<group>";
+		};
+		D4F80CFD1AEC1BAA00F19A0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4F80CFE1AEC1BAA00F19A0F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +240,12 @@
 				D4F80CB41AEC1AF500F19A0F /* Sources */,
 				D4F80CB51AEC1AF500F19A0F /* Frameworks */,
 				D4F80CB61AEC1AF500F19A0F /* Resources */,
+				D4F80D0D1AEC1BAA00F19A0F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D4F80D051AEC1BAA00F19A0F /* PBXTargetDependency */,
 			);
 			name = "Remote Fart";
 			productName = "Remote Fart";
@@ -157,6 +270,39 @@
 			productReference = D4F80CD11AEC1AF500F19A0F /* Remote FartTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D4F80CEC1AEC1BAA00F19A0F /* Remote Fart WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4F80D0A1AEC1BAA00F19A0F /* Build configuration list for PBXNativeTarget "Remote Fart WatchKit Extension" */;
+			buildPhases = (
+				D4F80CE91AEC1BAA00F19A0F /* Sources */,
+				D4F80CEA1AEC1BAA00F19A0F /* Frameworks */,
+				D4F80CEB1AEC1BAA00F19A0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4F80CFB1AEC1BAA00F19A0F /* PBXTargetDependency */,
+			);
+			name = "Remote Fart WatchKit Extension";
+			productName = "Remote Fart WatchKit Extension";
+			productReference = D4F80CED1AEC1BAA00F19A0F /* Remote Fart WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		D4F80CF71AEC1BAA00F19A0F /* Remote Fart WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4F80D071AEC1BAA00F19A0F /* Build configuration list for PBXNativeTarget "Remote Fart WatchKit App" */;
+			buildPhases = (
+				D4F80CF61AEC1BAA00F19A0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Remote Fart WatchKit App";
+			productName = "Remote Fart WatchKit App";
+			productReference = D4F80CF81AEC1BAA00F19A0F /* Remote Fart WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +314,18 @@
 				TargetAttributes = {
 					D4F80CB71AEC1AF500F19A0F = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 7987ABMN4B;
 					};
 					D4F80CD01AEC1AF500F19A0F = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = D4F80CB71AEC1AF500F19A0F;
+					};
+					D4F80CEC1AEC1BAA00F19A0F = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 7987ABMN4B;
+					};
+					D4F80CF71AEC1BAA00F19A0F = {
+						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
@@ -190,6 +344,8 @@
 			targets = (
 				D4F80CB71AEC1AF500F19A0F /* Remote Fart */,
 				D4F80CD01AEC1AF500F19A0F /* Remote FartTests */,
+				D4F80CEC1AEC1BAA00F19A0F /* Remote Fart WatchKit Extension */,
+				D4F80CF71AEC1BAA00F19A0F /* Remote Fart WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -200,8 +356,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4F80CC71AEC1AF500F19A0F /* Main.storyboard in Resources */,
+				D4F80D0F1AEC1CEB00F19A0F /* 6plus.storyboard in Resources */,
+				D4F80CE81AEC1B9B00F19A0F /* i5.storyboard in Resources */,
 				D4F80CCC1AEC1AF500F19A0F /* LaunchScreen.xib in Resources */,
 				D4F80CC91AEC1AF500F19A0F /* Images.xcassets in Resources */,
+				D4F80D131AEC23E800F19A0F /* i4.storyboard in Resources */,
+				D4F80CE61AEC1B9000F19A0F /* woopee.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +369,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F80CEB1AEC1BAA00F19A0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F80CF91AEC1BAA00F19A0F /* Remote Fart WatchKit App.app in Resources */,
+				D4F80CF51AEC1BAA00F19A0F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F80CF61AEC1BAA00F19A0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F80D011AEC1BAA00F19A0F /* Interface.storyboard in Resources */,
+				D4F80D111AEC215400F19A0F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +411,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4F80CE91AEC1BAA00F19A0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F80CF31AEC1BAA00F19A0F /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +426,16 @@
 			isa = PBXTargetDependency;
 			target = D4F80CB71AEC1AF500F19A0F /* Remote Fart */;
 			targetProxy = D4F80CD21AEC1AF500F19A0F /* PBXContainerItemProxy */;
+		};
+		D4F80CFB1AEC1BAA00F19A0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4F80CF71AEC1BAA00F19A0F /* Remote Fart WatchKit App */;
+			targetProxy = D4F80CFA1AEC1BAA00F19A0F /* PBXContainerItemProxy */;
+		};
+		D4F80D051AEC1BAA00F19A0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4F80CEC1AEC1BAA00F19A0F /* Remote Fart WatchKit Extension */;
+			targetProxy = D4F80D041AEC1BAA00F19A0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -258,6 +454,14 @@
 				D4F80CCB1AEC1AF500F19A0F /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D4F80CFF1AEC1BAA00F19A0F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4F80D001AEC1BAA00F19A0F /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -346,7 +550,8 @@
 		D4F80CDC1AEC1AF500F19A0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Remote Fart/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,7 +561,8 @@
 		D4F80CDD1AEC1AF500F19A0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Remote Fart/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,6 +603,64 @@
 			};
 			name = Release;
 		};
+		D4F80D081AEC1BAA00F19A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = WAppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Remote_Fart_WatchKit_Extension;
+				INFOPLIST_FILE = "Remote Fart WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		D4F80D091AEC1BAA00F19A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = WAppIcon;
+				IBSC_MODULE = Remote_Fart_WatchKit_Extension;
+				INFOPLIST_FILE = "Remote Fart WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		D4F80D0B1AEC1BAA00F19A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Remote Fart WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D4F80D0C1AEC1BAA00F19A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Remote Fart WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -422,6 +686,22 @@
 			buildConfigurations = (
 				D4F80CDF1AEC1AF500F19A0F /* Debug */,
 				D4F80CE01AEC1AF500F19A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4F80D071AEC1BAA00F19A0F /* Build configuration list for PBXNativeTarget "Remote Fart WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F80D081AEC1BAA00F19A0F /* Debug */,
+				D4F80D091AEC1BAA00F19A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4F80D0A1AEC1BAA00F19A0F /* Build configuration list for PBXNativeTarget "Remote Fart WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F80D0B1AEC1BAA00F19A0F /* Debug */,
+				D4F80D0C1AEC1BAA00F19A0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -17,6 +17,45 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    CGSize iOSDeviceScreenSize = [[UIScreen mainScreen] bounds].size;
+    if ((iOSDeviceScreenSize.height == 568) || (iOSDeviceScreenSize.height == 480))
+    {
+        // Instantiate a new storyboard object using the storyboard file named Storyboard_iPhone35
+        UIStoryboard *iPhone35Storyboard = [UIStoryboard storyboardWithName:@"i5" bundle:nil];
+        
+        // Instantiate the initial view controller object from the storyboard
+        UIViewController *initialViewController = [iPhone35Storyboard instantiateInitialViewController];
+        
+        // Instantiate a UIWindow object and initialize it with the screen size of the iOS device
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        
+        // Set the initial view controller to be the root view controller of the window object
+        self.window.rootViewController  = initialViewController;
+        
+        // Set the window object to be the key window and show it
+        [self.window makeKeyAndVisible];
+    }
+    if (iOSDeviceScreenSize.height == 667)
+    {   // iPhone 5 and iPod Touch 5th generation: 4 inch screen
+        // Instantiate a new storyboard object using the storyboard file named Storyboard_iPhone4
+        UIStoryboard *iPhone4Storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        UIViewController *initialViewController = [iPhone4Storyboard instantiateInitialViewController];
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        self.window.rootViewController  = initialViewController;
+        [self.window makeKeyAndVisible];
+    }
+    if (iOSDeviceScreenSize.height > 667)
+    {   // iPhone 5 and iPod Touch 5th generation: 4 inch screen
+        // Instantiate a new storyboard object using the storyboard file named Storyboard_iPhone4
+        UIStoryboard *iPhone4Storyboard = [UIStoryboard storyboardWithName:@"6plus" bundle:nil];
+        
+        UIViewController *initialViewController = [iPhone4Storyboard instantiateInitialViewController];
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        self.window.rootViewController  = initialViewController;
+        [self.window makeKeyAndVisible];
+    }
+
     return YES;
 }
 
@@ -41,5 +80,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void(^)(NSDictionary *replyInfo))reply {
+    SystemSoundID soundID;
+    NSString *soundFile = [[NSBundle mainBundle] pathForResource:@"woopee" ofType:@"mp3"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:soundFile], &soundID);
+    AudioServicesPlaySystemSound(soundID);
+}
+
 
 @end
